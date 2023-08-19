@@ -10,16 +10,16 @@ from AltBots.data import ALTRON
 ECHO = []
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)('*)" % hl))
 async def echo(event):
     if event.sender_id in SUDO_USERS:
         if event.reply_to_msg_id:
@@ -27,7 +27,7 @@ async def echo(event):
             user_id = reply_msg.sender_id
 
             if user_id in ALTRON:
-                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ.")
+                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ my ᴏᴡɴᴇʀ.")
             elif user_id == OWNER_ID:
                 await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ.")
             elif user_id in SUDO_USERS:
@@ -50,16 +50,16 @@ async def echo(event):
             await event.reply(f"𝗘𝗰𝗵𝗼:\n  » {hl}echo <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)('*)" % hl))
 async def rmecho(event):
     if event.sender_id in SUDO_USERS:
         if event.reply_to_msg_id:
