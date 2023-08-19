@@ -14,27 +14,27 @@ HELP_BUTTON = [
       Button.inline("• ᴇxᴛʀᴀ •", data="extra")
     ],
     [
-      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/TheAltron"),
-      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/AltronChats")
+      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/about_ranavanshi_divy"),
+      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/chatventure_club")
     ]
   ]
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)('*)" % hl))
 async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://te.legra.ph/file/07d39b85c6cea32f15259.jpg",
+              "http://telegra.ph/file/33da3b862484e846f185c.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
