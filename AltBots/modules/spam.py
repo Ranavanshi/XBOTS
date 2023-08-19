@@ -24,16 +24,16 @@ async def gifspam(e, smex):
         pass
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)('*)" % hl))
 async def spam(event: events):
     if event.sender_id in SUDO_USERS:
         altron = event.text.split(" ", 2)
@@ -67,16 +67,16 @@ async def spam(event: events):
             print(e)
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)('*)" % hl))
 async def pspam(event):
     if event.sender_id in SUDO_USERS:
         if event.chat_id in GROUP:
@@ -95,16 +95,16 @@ async def pspam(event):
                 print(e)
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)('*)" % hl))
 async def hang(e):
     if e.sender_id in SUDO_USERS:
         if e.chat_id in GROUP:
