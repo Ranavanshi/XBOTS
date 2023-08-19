@@ -4,16 +4,16 @@ from telethon import events
 from telethon.tl.functions.channels import LeaveChannelRequest
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)('*)" % hl))
 async def leave(e):
     if e.sender_id in SUDO_USERS:
 
