@@ -12,7 +12,7 @@ START_BUTTON = [
         Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/chatventure_club")
     ],
     [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/ItZxSTaR/XBOTS")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Ranavanshi/XBOTS")
     ]
 ]
 
@@ -35,7 +35,7 @@ async def start(event):
         bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
         TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝕯𝖎𝖛𝖞𝖆𝖓𝖘𝖍𝖚](https://t.me/Ranavanshi_Divy)**\n\n"
-        TEXT += f"» **xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
+        TEXT += f"» **Dɪᴠʏᴀɴsʜᴜ xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
         TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
